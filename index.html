@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSC 196V  Assignment 2</title>
+  <style>
+* { padding: 0; margin: 0; }
+
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #33333f;
+  width: 840px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
+
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body>
+<div class='content'>
+
+<section>
+  <h1>Assignment 2: Exploratory Data Analysis</h1>
+
+  <h2> Team Woop </h2>
+  <p>
+    <strong>Kyle Ivan Barreras, Blake Danz, Cathy Khong, Dip Patel</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Dataset</h2>
+
+  <p>
+    ENTER A DESCRIPTION OF YOUR DATA SET HERE.<br/>
+    What is this data about? Who produced this dataset? Why are you interested in it?
+  </p>
+
+  <p>
+    The data is available online at:
+    <strong>
+      <a href="https://data.census.gov/table/ACSST1Y2022.S2801?q=internet+access+in+california&g=040XX00US06$0500000">data.census.gov</a>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li> Yolo County
+        <ul>
+          <li>What is the most common type of computing 
+            device in Yolo households?
+          </li>
+          <br>
+            <li>
+              How does the distribution of Internet subscription types (dial-up, broadband, none) 
+              vary across different income groups?
+            </li>
+            <br>
+            <li>
+              What is the distribution of 
+              internet subscription types in the Yolo County?
+            </li>
+            <br>
+        </ul>
+    </li>
+    <li> El Dorado County
+      <ul>
+        <li>What types of computing devices do people 
+          in El Dorado County Own? 
+        </li>
+        <br>
+        <li>Does income impact internet subcriptions access for people 
+          living in El Dorado
+        </li>
+        <br>
+        <li>
+          What type of Internet subcriptions do people 
+          in El dorado County have?
+        </li>
+        <br>
+      </ul>
+    </li>
+    <li> Sacramento
+      <ul>
+        <li> test</li>
+      </ul>
+    </li>
+    <li> California 
+      <ul>
+        <li>What percentage of households per county have at least one device? </li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+
+  <div class="entry">
+    <h3>What is the most common type of computing device in Yolo households?</h3>
+    <img src="Images/YOLO/TYPEOFCOMPUTERS.JPG" />
+    <p class="caption">
+    Types of computers used in Yolo County.
+    </p>
+    <h4>Quick Summary</h4>
+    <p> In Yolo County group of 77,323 households were surveyed, among them 75,135 
+      have some form of computing device. With desktop or laptop computers being the most common (65,774). Additionally, 6,940 households have tablets or other portable wireless computers,
+       and 2,178 households have other types of computers, while 2,188 households reported having no computers. While 75,135 households has one or more tpyes of computing devices.  </p>
+  </div>
+
+  <div class="entry">
+    <h3>How does the distribution of Internet 
+    subscription types (dial-up, broadband, none) vary across different income groups?
+  </h3>
+    <img src="Images/YOLO/HOUSEHOLDV3.JPG" />
+    <p class="caption">
+    HouseHold Income in the Past 12 Months (2022 Inflation-adjusted Dollars) in Yolo County.
+    </p>
+    <h4>Quick Summary</h4>
+    <p>Among the 77,323 households. Among these households, 9,997 have an annual income of less than $20,000, and out of those 7,766 have no internet subscription. 
+      While 2,231 have a broadband internet subscription, and none have dial-up internet alone. In the $20,000 to $74,999, there are 24,729 households, with 21,952 having a broadband internet subcriptions,
+      2,777 without any internet subscription, and none having dial-up internet alone. FOr house holds with $75,000 or more, 42,597 households  do not have dial-up subscription alone, 41,621 have broadband internet subscription. 
+      and 976 do not have any internet subscription.
+    </p>
+  </div>
+
+  <div class="entry">
+    <h3>What is the distribution of internet 
+      subscription types in Yolo County?
+    </h3>
+    <img src="Images/YOLO/NETSUBCRIPTIONV2.JPG" />
+    <p class="caption">
+    Type Of Internet Subscriptions in Yolo County.
+    </p>
+    <h4>Quick Summary</h4>
+    <p>In Yolo county there are 71,339 households with an internet subscription.  Out of these 66,985 households have a broadband internet subcrion, with 10,998 have cellular data plan
+      in addition to their broadband subscription. Additionally, 57,144 households have broadband internet through tech like, cable, fiber optic, or dsl. And 5,661 households have satellite internet service.
+      On the other hand, there are 5,984 households in Yolo county that do not have any intenret subscription.
+
+
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Images/Eldorado/Computing.png" />
+    <p class="caption">
+    Computing devices people own in El Dorado County.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="Images/Eldorado/Deceptive.png" />
+    <p class="caption">
+    Computing devices people own in El Dorado County.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="Images/Eldorado/IncomeImpact.png" />
+    <p class="caption">
+    Internet Subscriptions in El Dorado County.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="Images/Eldorado/InternetSubscription.png" />
+    <p class="caption">
+    Type of Internet Subscriptions in El Dorado County.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="IMAGE_FILENAME" />
+    <p class="caption">
+    ENTER IMAGE CAPTION HERE.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="IMAGE_FILENAME" />
+    <p class="caption">
+    ENTER IMAGE CAPTION HERE.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="IMAGE_FILENAME" />
+    <p class="caption">
+    ENTER IMAGE CAPTION HERE.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="IMAGE_FILENAME" />
+    <p class="caption">
+    ENTER IMAGE CAPTION HERE.
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <img src="Images/Counties/Householdpic.png" />
+    <p class="caption">
+      What percentage of households per county have at least one device?
+      The percent ranges from 93.2 to 98.3 as shown by the color scale
+    </p>
+    <h4>Quick Summary</h4>
+    <p></p>
+  </div>
+
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+    WRITE FINAL SUMMARY HERE.
+    </p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
